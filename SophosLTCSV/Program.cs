@@ -7,7 +7,6 @@ namespace LTCSV
 {
     public static class Program
     {
-
         public static void Main(string[] args)
         {
             if (args.Length < 2 )
@@ -81,7 +80,9 @@ namespace LTCSV
                         byte[] outBytes = new UTF8Encoding(true).GetBytes(outTXT.ToArray());
                         fs.Write(outBytes, 0, outBytes.Length);
                     }
+                    reader.Close();
                 }
+                fs.Close();
             }
         }
     }
