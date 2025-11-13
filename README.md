@@ -18,3 +18,6 @@ C# .NET Sophos Firewall Log to CSV Converter
 
 # input file size limit
 - there is (should be) no limit, this tool will read and process the input line by line
+
+# waring: may not work anymore
+13.11.2025 this script may not work anymore, i will update this repository in the future and may move the codebase to python
